@@ -1,0 +1,24 @@
+button{/*selector de tipo*/
+    width: 250px;
+    height: 80px;
+    font-size: 35px;
+    font-family: Roboto, sans-serif;/*el primer font es el queremos que se muestre, el segundo es si el navegador no soporta el primero*/
+    font-weight: bold;/*peso de la letra*/
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px; /*bordes redondeados*/
+    margin: 5px;
+    cursor: pointer;/*en vez de flecha mostrara una manito*/
+}
+
+button:hover {
+    background-color: #00471b;
+}
+
+.boton-clic {/*seleccion por clase => className="boton-clic"*/
+    background-color: #002ead;
+}
+
+.boton-reiniciar{/*seleccion por clase => className="boton-reiniciar"*/
+    background-color: #5a01a7;
+}
