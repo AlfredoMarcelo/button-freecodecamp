@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*como se van a comportar el ancho y alto de las cajas*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body{
+    background-color: #1b1b32;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {/*contenedor*/
+    display: flex;/*permite centrar de manera vertical*/
+    flex-wrap: wrap;/*permite centrar de manera vertical*/
+    align-items: center;/*permite centrar de manera horizontal*/
+    justify-content: center;/*permite centrar de manera horizontal*/
+    padding-top: 15px;
+    font-family: Lato, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dedo-logo-contenedor{/*contenedor o caja que contiene la imagen*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;/*margen den contenedor*/
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dedo-logo{/*imagen*/
+    height: 200px;/*Si solo se declara la altura, mantendrá sus proporciones*/
+    filter: invert(100%) sepia(0%) saturate(7400%) hue-rotate(249deg) brightness(96%) contrast(105%);/*Para cambiar el color de una imagen png*/
 }
